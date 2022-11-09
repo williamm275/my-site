@@ -3,3 +3,49 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
+    background-color: #232931;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+nav h2 {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #c3cddddb
+}
+
+.navbar img {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232931;
+    border-color: #EEEEEE;
+    width:50px;
+}
