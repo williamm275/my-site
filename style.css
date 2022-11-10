@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #EEEEEE;
     background-color: #232931;
 }
 
+h1 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -19,7 +25,7 @@ nav {
 nav h2 {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .navbar ul {
@@ -31,13 +37,18 @@ nav h2 {
 }
 
 .navbar a {
+    transition: color 0.4s ease;
     font-size: 18px;
     display: flex;
     align-items: center;
     margin-right: 70px;
     font-weight: 500;
     text-decoration: none;
-    color: #c3cddddb
+    color: #c3cddddb;
+}
+
+.navbar a:hover {
+    color: #EEEEEE;
 }
 
 .navbar img {
@@ -48,4 +59,45 @@ nav h2 {
     background-color: #232931;
     border-color: #EEEEEE;
     width:50px;
+}
+
+/* Banner */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+header img {
+    width: 600px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    width: 500px;
+}
+
+.header-text button {
+    border-radius: 30px;
+    border: none;
+    padding: 1.5rem 2rem;
+    margin: 5px;
+    text-decoration: none;
+    background: #EEEEEE;
+    color: #232931;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.header-text button:hover {
+    color: #EEEEEE;
+    background: #7AC7C4;
 }
