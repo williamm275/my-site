@@ -99,7 +99,21 @@ header img {
     font-size: 30px;
 }
 
+.main-text-container p.banner-slogan {
+    font-family: 'Mr Dafoe', sans-serif;
+    font-size: 30px;
+}
+
 .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    width: 500px;
+}
+
+.light-mode.header-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -339,6 +353,16 @@ main {
         width: 90%;
         margin: 0;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .light-mode.header-text {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-container {
