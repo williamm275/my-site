@@ -67,6 +67,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
     gap: 70px;
 }
 
@@ -116,6 +117,7 @@ header img {
 .main-container {
     display: flex;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .main-text-container {
@@ -125,9 +127,9 @@ header img {
     margin: 0 80px;
     padding: 100px;
     text-align: left;
-    background-color: #232931;
+    background-color: #EEEEEE;
     border-radius: 40px;
-    color: #EEEEEE
+    color: #232931
 }
 
 .main-text-container h2 {
@@ -140,7 +142,7 @@ header img {
 
 .main-experience-container {
     width: 40%;
-    padding: 0 80px;
+    padding: 50px 80px;
     justify-content: center;
 }
 
@@ -230,4 +232,16 @@ header img {
 .light-mode.header-text button:hover {
     color: #EEEEEE;
     background: #7AC7C4;
+}
+
+.light-mode.main-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 80px;
+    padding: 100px;
+    text-align: left;
+    background-color: #232931;
+    border-radius: 40px;
+    color: #EEEEEE
 }
