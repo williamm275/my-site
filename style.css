@@ -29,6 +29,24 @@ nav h2 {
     align-items: center;
     margin-left: 80px;
 }
+.light-mode.name-logo h2 {
+    color: #232931;
+}
+
+.name-logo h2 {
+    color: #EEEEEE;
+    transition: border-bottom 0.3s ease;
+}
+
+.light-mode.name-logo h2:hover {
+    border-bottom: 2px solid transparent;
+    border-color: #232931;
+}
+
+.name-logo h2:hover {
+    border-bottom: 2px solid transparent;
+    border-color: #EEEEEE;
+}
 
 .navbar ul {
     display: flex;
@@ -169,6 +187,19 @@ header img {
 .main-experience-container img {
     width: 30px;
 }
+
+.project-previews {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.image {
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+  }
 
 /* Light Mode */
 .light-mode {
