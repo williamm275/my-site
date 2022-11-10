@@ -354,7 +354,7 @@ main {
         align-items: center;
     }
 
-    .main-text-container p {
+    .main-text-container h2, p {
         text-align: center;
     }
 
