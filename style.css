@@ -297,6 +297,10 @@ main {
         justify-content: center;
     }
 
+    nav h2{
+        margin-right: 20px;
+    }
+
     html {
         overflow-x: hidden;
     }
@@ -313,7 +317,7 @@ main {
 
     header {
         flex-direction: column;
-        margin-right: 30px;
+        margin-right: 40px;
         gap: 0;
     }
 
