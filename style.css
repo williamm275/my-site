@@ -98,6 +98,16 @@ header img {
     transition: 0.4s ease;
 }
 
+.header-text button a:link {
+    text-decoration: none;
+    color: #232931;
+}
+
+.header-text button a:visited {
+    text-decoration: none;
+    color: #232931;
+}
+
 .header-text button:hover {
     color: #EEEEEE;
     background: #7AC7C4;
@@ -124,6 +134,10 @@ header img {
     color: #232931;
 }
 
+.light-mode.navbar a:visited {
+    color: #232931ae;
+}
+
 .light-mode.navbar img {
     cursor: pointer;
     display: flex;
@@ -147,6 +161,16 @@ header img {
     font-size: 1.1rem;
     cursor: pointer;
     transition: 0.4s ease;
+}
+
+.light-mode.header-text button a:link {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.light-mode.header-text button a:visited {
+    text-decoration: none;
+    color: #EEEEEE;
 }
 
 .light-mode.header-text button:hover {
