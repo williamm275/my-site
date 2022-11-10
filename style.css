@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Dark Mode */
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #EEEEEE;
@@ -98,6 +99,57 @@ header img {
 }
 
 .header-text button:hover {
+    color: #EEEEEE;
+    background: #7AC7C4;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #EEEEEE;
+    color: #232931;
+}
+
+.light-mode.navbar a {
+    transition: color 0.4s ease;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #232931ae;
+}
+
+.light-mode.navbar a:hover {
+    color: #232931;
+}
+
+.light-mode.navbar img {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    border-color: #232931;
+    width:50px;
+}
+
+.light-mode.header-text button {
+    border-radius: 30px;
+    border: none;
+    padding: 1.5rem 2rem;
+    margin: 5px;
+    text-decoration: none;
+    background: #232931;
+    color: #EEEEEE;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.light-mode.header-text button:hover {
     color: #EEEEEE;
     background: #7AC7C4;
 }
