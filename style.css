@@ -86,8 +86,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 40px;
-  gap: 70px;
+  gap: 5em;
+  padding: 50px;
 }
 
 header img {
