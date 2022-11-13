@@ -29,6 +29,7 @@ nav h2 {
   align-items: center;
   margin-left: 80px;
 }
+
 .light-mode.name-logo h2 {
   color: #232931;
 }
@@ -337,7 +338,7 @@ main {
   header {
     flex-direction: column;
     margin-right: 40px;
-    gap: 0;
+    gap: 20px;
   }
 
   header button {
