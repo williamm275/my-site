@@ -84,11 +84,11 @@ nav h2 {
 
 /* Banner */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 40px;
-    gap: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+  gap: 70px;
 }
 
 header img {
