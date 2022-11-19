@@ -10,6 +10,7 @@ body {
     color: #EEEEEE;
     background-color: #232931;
     overflow-x: hidden;
+    margin: 0;
 }
 
 h1 {
@@ -94,16 +95,6 @@ header img {
     width: 600px;
 }
 
-.light-mode p.banner-slogan {
-    font-family: 'Mr Dafoe', sans-serif;
-    font-size: 30px;
-}
-
-.main-text-container p.banner-slogan {
-    font-family: 'Mr Dafoe', sans-serif;
-    font-size: 30px;
-}
-
 .header-text {
     display: flex;
     flex-direction: column;
@@ -181,8 +172,18 @@ main {
     font-size: 32px;
 }
 
+.main-text-container .about-page {
+  margin: 0 auto;
+}
+
 .main-text-container p {
     font-size: 22px;
+}
+
+.main-text-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px auto;
 }
 
 .main-experience-container {
@@ -213,19 +214,30 @@ main {
 }
 
 .main-experience-container img {
-  width: 40px;
+  width: 50px;
 }
 
 .project-previews {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+.project-previews div ul {
+  list-style: none;
+}
+
+.project-previews div p {
+  font-size: 22px;
 }
 
 .image {
-  width: 600px;
-  height: 300px;
+  width: 400px;
+  height: 200px;
   border-radius: 15px;
 }
 
@@ -304,6 +316,40 @@ main {
   background-color: #232931;
   border-radius: 40px;
   color: #eeeeee;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee00;
+  color: #989898;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+footer .links {
+  text-align: center;
+}
+
+footer a {
+  color: #00000043;
+  background-color: deepskyblue;
+  border-radius: 10px;
+  padding: 6px 10px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  margin: 3px;
+}
+
+footer a:visited {
+  color: #00000043;
+}
+
+footer a:hover {
+  background-color: coral;
 }
 
 /* Mobile Response */
@@ -408,7 +454,7 @@ main {
 } 
 
 .main-experience-container img {
-    width: 30px;
+    width: 50px;
 }
 
 .project-previews {
