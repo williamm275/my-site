@@ -200,20 +200,20 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 9px;
     margin: 0;
     padding: 0;
 }
 
 .main-experience-container li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 28px;
 }
 
 .main-experience-container img {
-  width: 30px;
+  width: 40px;
 }
 
 .project-previews {
