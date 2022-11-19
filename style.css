@@ -367,16 +367,14 @@ footer a:hover {
 
 /* Mobile Response */
 @media only screen and (max-width: 1000px) {
+  .fluid-container {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
   nav ul li {
     display: none;
-  }
-
-  nav {
-    justify-content: center;
-  }
-
-  nav h2 {
-    margin-right: 20px;
   }
 
   html {
@@ -389,7 +387,7 @@ footer a:hover {
   }
 
   body {
-    margin: 0;
+    margin: 20px 0;
     overflow-x: hidden;
   }
 
@@ -433,7 +431,7 @@ footer a:hover {
     width: 100%;
     margin: 0;
     padding: 15%;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
   }
@@ -442,19 +440,12 @@ footer a:hover {
     width: 100%;
     margin: 0;
     padding: 15%;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
   }
 
-  .main-text-container h2,
-  p {
+  .main-text-container h2, p {
     text-align: center;
-  }
-
-  hr {
-    color: #eeeeee;
-    width: 30%;
-    margin-top: 50px;
   }
 
   .main-experience-container {
@@ -464,10 +455,11 @@ footer a:hover {
     justify-content: center;
     gap: 5px;
     width: 100%;
+    padding: 20px 0 0 0;
 } 
 
 .main-experience-container img {
-    width: 50px;
+    width: 40px;
 }
 
 .project-previews {
@@ -486,5 +478,13 @@ footer a:hover {
   .image {
     width: 380px;
     height: 220px;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  footer a {
+    margin: 5px 0;
   }
 }
