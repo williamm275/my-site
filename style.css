@@ -431,7 +431,7 @@ footer a:hover {
     width: 100%;
     margin: 0;
     padding: 15%;
-    border-radius: 10px;
+    border-radius: 0;
     align-items: center;
     justify-content: center;
   }
@@ -440,7 +440,7 @@ footer a:hover {
     width: 100%;
     margin: 0;
     padding: 15%;
-    border-radius: 10px;
+    border-radius: 0;
     align-items: center;
   }
 
@@ -462,16 +462,26 @@ footer a:hover {
     width: 40px;
 }
 
+main {
+  width: 100%;
+  margin: 0;
+}
+
 .project-previews {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10px;
+    width: 100%;
+}
+
+.project-previews ul {
+  padding: 0;
 }
 
 .image {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
     border-radius: 15px;
   }
 
