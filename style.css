@@ -5,6 +5,13 @@
     scroll-behavior: smooth;
 }
 
+.fluid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 90px;
+}
+
 /* Dark Mode */
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -37,6 +44,7 @@ nav h2 {
 
 .name-logo h2 {
     color: #EEEEEE;
+    margin-left: 40px;
     transition: border-bottom 0.3s ease;
 }
 
@@ -69,6 +77,10 @@ nav h2 {
     color: #c3cddddb;
 }
 
+.navbar .name-logo {
+  margin-left: 0;
+}
+
 .navbar a:hover {
     color: #EEEEEE;
 }
@@ -88,12 +100,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 40px;
+  margin: 30px 40px;
   gap: 70px;
 }
 
 header img {
-    width: 600px;
+    width: 500px;
 }
 
 .header-text {
