@@ -223,9 +223,9 @@ header {
 /* --------------- About Me --------------- */
 #about-me {
     background-color: #000000;
-    background-image: url(./images/Argo.jpg);
+    background-image: url(./images/gradient.jpeg);
     background-size: auto;
-    background-position: bottom;
+    background-position: right;
     color: #ffffff;
     height: 60em;
 }
@@ -241,40 +241,56 @@ header {
 }
 
 /* --------------- Experience --------------- */
-#experience.light-mode {
+section#experience.light-mode {
     background-color: #ffffff;
     color: #171717;
+    height: 50em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-#experience {
+section#experience {
     background-color: #171717;
     color: #ffffff;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.experience-container {
+div.experience-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 14em 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 275px;
 }
 
 .experience-container ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 18px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .experience-container li {
     display: flex;
     align-items: center;
     font-family: 'Alexandria';
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 500;
     gap: 10px;
 }
 
 .experience-container img {
-    width: 50px;
+    width: 40px;
 }
 
 /* --------------- Footer --------------- */
@@ -421,10 +437,10 @@ footer {
     .about-text-container p {
         font-size: 20px;
     }
-    
-    .experience-container {
-        margin: 40px 80px;
-        padding: 0;
+
+    div.experience-container {
+        width: 100%;
+        padding: 0 40px;
     }
 
     footer {
