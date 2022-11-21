@@ -405,6 +405,13 @@ footer {
     #my-work .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
         border-radius: 0;
         margin-top: 0;
+        width: 100%;
+    }
+
+    #about-me {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-text-container {
