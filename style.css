@@ -248,8 +248,9 @@ header {
 }
 
 /* --------------- Experience --------------- */
-#experience .light-mode {
-    height: 50em;
+#experience.light-mode {
+    background-color: #ffffff;
+    color: #171717;
 }
 
 #experience {
@@ -334,7 +335,6 @@ footer {
         align-items: center;
         margin: 0;
         padding: 0;
-        position: relative;
     }
 
     h1 {
@@ -412,14 +412,14 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 40px 40px;
+        margin: 60px 40px;
         padding: 0;
     }
 
     .about-text-container p {
-        font-size: 21px;
+        font-size: 20px;
     }
-
+    
     .experience-container {
         margin: 40px 80px;
         padding: 0;
