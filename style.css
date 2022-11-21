@@ -319,3 +319,108 @@ footer {
   footer a:hover {
     color: #ffffff5d;
   }
+
+/* --------------- Mobile Response --------------- */
+@media only screen and (max-width: 1100px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    .logo {
+        margin-left: 30px;
+    }
+
+    .darkmode {
+        margin-right: 30px;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        width: 30px;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-text-container h1 {
+        margin: 0;
+    }
+
+    .header-text-container p {
+        margin: 0;
+    }
+
+    .header-text-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .memoji {
+        width: 400px;
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #my-work {
+        padding: 0;
+        gap: 0;
+    }
+
+    #my-work.light-mode {
+        padding: 0;
+        gap: 0;
+    }
+
+    #my-work .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .about-text-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 40px;
+        padding: 0;
+    }
+
+    .about-text-container p {
+        font-size: 21px;
+    }
+
+    .experience-container {
+        margin: 40px 80px;
+        padding: 0;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
