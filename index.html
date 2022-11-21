@@ -1,93 +1,108 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <title>William R. Martinez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Will R. Martinez</title>
   </head>
-  <div class="fluid-container">
-  <body class="light-mode">
-    <!-- Navigation -->
-    <div class="navbar light-mode">
-      <nav>
-        <a class="light-mode name-logo" href="./index.html"
-          ><h2>William R. Martinez</h2></a
-        >
-        <ul>
-          <li><a href="./my-work.html">My Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="./about.html">About</a></li>
-          <!-- <li><a href="./pages/blog.html">Blog</a></li> -->
-        </ul>
-        <a class="darkmode"
-          ><img
-            src="./images/moon.png"
-            id="imgClickAndChange"
-            onclick="changeImage()"
-        /></a>
-      </nav>
+  
+  <body>
+  <nav>
+    <a href="./index.html"><img class="logo" src="./images/logo-white.svg" /></a>
+    <ul class="nav-links">
+        <li><a href="#my-work">My Work</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="darkmode"><img src="./images/moon.png" id="imgClickAndChange" onclick="changeImage()" /></a>
+  </nav>
+
+  <header>
+    <div class="header-text-container">
+        <h1>William R. Martinez</h1>
+        <p>Full-Stack Engineer</p>
     </div>
-    <!-- Banner -->
-    <div class="banner">
-      <header>
-        <div class="header-text light-mode">
-          <h1>
-            To impact with creative design, innovation, and fluid user experience.
-          </h1>
-          <a href="./my-work.html"><button>My work</button></a>
-          <a href="./about.html"><button>
-            Learn more about Will</button></a>
+    <img class="memoji" src="./images/memoji.svg" />
+  </header>
+
+  <main>
+    <section id="my-work" class="light-mode">
+        <div class="project-1">
+            <h2>Project 1</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
         </div>
-        <img src="./images/banner.svg" />
-      </header>
-    </div>
-    <!-- Main content -->
-    <main>
-      <div class="main-container">
-        <div class="main-text-container light-mode">
-          <h2>Hi, I'm William</h2>
-          <p>a Full-Stack Software Engineer</p>
-          <p>
-            Technology has improved the lives we live today. As the web evolves,
-            so do our lives. Tech has helped us to do just that! I aspire to
-            inspire the next generation of engineers and the ones to come.
-          </p>
+        <div class="project-2">
+            <h2>Project 2</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
         </div>
-        
-        <div class="main-experience-container">
-          <h2>What I've worked with: </h2>
-          <ul>
-            <li><img src="./images/logos/html5.png" />HTML5</li>
-            <li><img src="./images/logos/css3.png" />CSS3</li>
-            <li><img src="./images/logos/javascript.png" />JavaScript</li>
-            <li><img src="./images/logos/node-js.png" />Node.js</li>
-            <li><img src="./images/logos/react.png" />React.js</li>
-            <li><img src="./images/logos/mongodb.png" />MongoDB</li>
-            <li><img src="./images/logos/figma.png" />Figma</li>
-            <li><img src="./images/logos/RESTAPI.png" />REST API</li>
-            <li><img src="./images/logos/bootstrap.png" />Bootstrap</li>
-            <li><img src="./images/logos/visual-studio-code.png" />VS Code</li>
-            <li><img src="./images/logos/git.png" />Git</li>
-            <li><img src="./images/logos/github.png" />GitHub</li>
-            <li><img src="./images/logos/npm.png" />NPM</li>
-            <li><img src="./images/logos/webpack.png" />Webpack</li>
-          </ul>
+        <div class="project-3">
+            <h2>Project 3</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div id="contact" class="links">
+        <div class="project-4">
+            <h2>Project 4</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+        </div>
+        <div class="project-5">
+            <h2>Project 5</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+        </div>
+         <div class="project-6">
+            <h2>Project 6</h2>
+            <a><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+        </div>
+    </section>
+    
+    <section id="about-me">
+        <div class="about-text-container">
+        <h3>Hi, I'm Will</h3>
+        <p>Since a kid, I've always experimented with tech. I would often download programs and utilize these tools to create projects. Determined to learn, I often would take it upon myself to find the information I needed to accomplish whatever idea in mind. To this day, I continue to utilize my ability to research, learn and be open to new concepts. I take the initiative to solve solutions to problems that allow me to create a well-polished product. I also understand the importance of collaboration. Working with others will ensure efficiency, quick service, proper delegation, and organization. There is no doubt that technology has improved the lives we live today. As the web evolves, so do our lives. Tech has helped us to do just that! I aspire to inspire the next generation of engineers and help the world keep pushing forward. I can build a stylized and responsive website with HTML and CSS, add interactivity using JavaScript, design relational databases, create a RESTful API that serves data from the relational database and more.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="light-mode">
+        <div class="experience-container">
+            <h2>What I've worked with: </h2>
+            <ul>
+              <li><img src="./images/logos/html5.png" />HTML5</li>
+              <li><img src="./images/logos/css3.png" />CSS3</li>
+              <li><img src="./images/logos/javascript.png" />JavaScript</li>
+              <li><img src="./images/logos/node-js.png" />Node.js</li>
+              <li><img src="./images/logos/react.png" />React.js</li>
+              <li><img src="./images/logos/mongodb.png" />MongoDB</li>
+              <li><img src="./images/logos/figma.png" />Figma</li>
+              <li><img src="./images/logos/RESTAPI.png" />REST API</li>
+              <li><img src="./images/logos/bootstrap.png" />Bootstrap</li>
+              <li><img src="./images/logos/visual-studio-code.png" />VS Code</li>
+              <li><img src="./images/logos/git.png" />Git</li>
+              <li><img src="./images/logos/github.png" />GitHub</li>
+              <li><img src="./images/logos/npm.png" />NPM</li>
+              <li><img src="./images/logos/webpack.png" />Webpack</li>
+            </ul>
+          </div>
+    </section>
+
+    <section id="contact">
+
+    </section>
+  </main>
+
+  <footer>
+    <div id="contact" class="links light-mode">
         <p>You can reach me on: </p>
       <a href="https://github.com/williamm275">GitHub</a>
       <a href="https://linkedin.com/in/williamm275">LinkedIn</a>
     </div>
-    </footer>
-  </div>
-    <script src="script.js"></script>
+  </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
