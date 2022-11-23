@@ -95,18 +95,16 @@ header {
 
 /* --------------- Projects --------------- */
 #my-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 5em 5em;
     gap: 20px;
     background-color: #171717;
 }
 
 #my-work.light-mode {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 5em 5em;
     gap: 20px;
     background-color: #ffffff;
@@ -393,11 +391,13 @@ footer {
     }
 
     #my-work {
+        grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
     }
 
     #my-work.light-mode {
+        grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
     }
