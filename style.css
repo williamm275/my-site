@@ -1,450 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700&family=Nanum+Gothic&display=swap');
+@font-face {
+    font-family: 'PP Mori';
+    src:url(./font/PP-Mori/PPMori-SemiBold.otf);
+}
+@font-face {
+    font-family: 'PP Mori Regular';
+    src: url(./font/PP-Mori/PPMori-Regular.otf);
+}
 
 * {
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: 'PP Mori Regular';
+    background-color: #FFFFFF;
+    font-size: 18px;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-h1 {
-    font-family: 'Alexandria';
-    font-weight: 500;
-    font-size: 60px;
-}
-
-h2 {
-    font-family: 'Alexandria';
-    font-size: 30px;
-}
-
-h3 {
-    font-family: 'Alexandria';
-    font-size: 60px;
-}
-
-p {
-    font-size:32px;
-}
-
-/* --------------- Navigation --------------- */
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #343A3E;
-    height: 4em;
-    font-size: 13px;
-    color: #ffffff;
+    align-items: center;
+    height: 120px;
+    padding: 40px 150px;
+}
+
+nav h2 {
+    font-family: 'PP Mori';
+    font-size: 80px;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
-    cursor: pointer;
+    align-items: center;
+    gap: 20px;
 }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
+.dot {
+    font-size: 50px;
+    color: #ef233c;
+}
+
+nav button {
+    height: unset;
+    padding: 25px 20px;
+    border-radius: 30px;
+    border: 1px solid #2d3142;
+    text-align: center;
+    font-size: 20px;
+    background-color: #15171f;
+    color: #FFFFFF;
+    cursor: pointer;
     transition: 0.2s;
 }
 
-.nav-links a:visited {
-    color: #ffffff;
-}
-
-.nav-links a:hover {
-    color: #cfcfcf;
-}
-
-.darkmode img {
-    width: 28px;
-    cursor: pointer;
-    margin-right: 20em;
-}
-
-.logo {
-    width: 28px;
-    margin-left: 20em;
-}
-
-/* --------------- Header --------------- */
-header.light-mode {
+ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #14213d;
-    background-color: #e3e3e3;
-    height: 45em;
+    gap: 30px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #15171f;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a:visited {
+    color: #15171f;
+}
+
+a:hover {
+    color: #bfc0c0;
+}
+
+button:hover {
+    background-color: #bfc0c0;
+    border-color: #bfc0c0;
 }
 
 header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #bfc0c0;
+    background-color: #15171f;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    min-height: 100vh;
+    padding: 40px 150px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'PP Mori';
+    font-size: 70px;
+    padding-top: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    padding-top: 40px;
+    line-height: 1.6;
+}
+
+#projects {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
-    background-color: #14213d;
-    height: 45em;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    font-family: 'PP Mori';
+    padding: 40px 150px;
 }
 
-.header-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-left: 6em;
+#projects a {
+    font-size: 70px;
 }
 
-.memoji {
-    margin-right: 6em;
+.project1 {
+    margin-bottom: 400px;
 }
 
-/* --------------- Projects --------------- */
-#my-work {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5em 5em;
-    gap: 20px;
-    background-color: #1d2840;
+.project3 {
+    margin-top: 400px;
 }
 
-#my-work.light-mode {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5em 5em;
-    gap: 20px;
-    background-color: #ffffff;
-}
-
-.light-mode .project-1 {
-    background-image: url(./images/project-screenshots/decoder-ring.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-2 {
-    background-image: url(./images/project-screenshots/easybank-landing-page.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-3 {
-    background-image: url(./images/project-screenshots/local-library.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-4 {
-    background-image: url(./images/project-screenshots/praxil.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-5 {
-    background-image: url(./images/project-screenshots/robofriends.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-6 {
-    background-image: url(./images/project-screenshots/tindog.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.light-mode .project-1 a, .light-mode .project-2 a, .light-mode .project-3 a, .light-mode .project-4 a, .light-mode .project-5 a, .light-mode .project-6 a {
-    color: rgb(99, 99, 99);
-}
-
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Alexandria';
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 30px;
-    color: #ffffff;
-    background-color: #ffffff0c;
-    width: 400px;
-    height: 300px;
-    border-radius: 50px;
-    gap: 10px;
-    transition: all 1s;
-}
-
-.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .project-5:hover, .project-6:hover {
-    transform: scale(1.05);
-}
-
-.project-1 {
-    background-image: url(./images/project-screenshots/decoder-ring.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-2 {
-    background-image: url(./images/project-screenshots/easybank-landing-page.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-3 {
-    background-image: url(./images/project-screenshots/local-library.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-4 {
-    background-image: url(./images/project-screenshots/praxil.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-5 {
-    background-image: url(./images/project-screenshots/robofriends.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-6 {
-    background-image: url(./images/project-screenshots/tindog.png);
-    background-size: cover;
-    color: rgb(99, 99, 99);
-}
-
-.project-1 a, .project-2 a, .project-3 a, .project-4 a, .project-5 a, .project-6 a {
-    color: rgb(99, 99, 99);
-}
-
-/* --------------- About Me --------------- */
-#about-me {
-    background-color: #000000;
-    background-image: url(./images/gradient.jpg);
-    background-size: cover;
-    background-position: right;
-    color: #ffffff;
-    height: 45em;
-}
-
-.about-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding: 14em 0;
-    gap: 20px;
-}
-
-/* --------------- Experience --------------- */
-section#experience.light-mode {
-    background-color: #ffffff;
-    color: #171717;
-    height: 50em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-section#experience {
-    background-color: #1d2840;
-    color: #ffffff;
-    height: 50em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-div.experience-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 275px;
-}
-
-.experience-container ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.experience-container li {
-    display: flex;
-    align-items: center;
-    font-family: 'Alexandria';
-    font-size: 28px;
-    font-weight: 500;
-    gap: 10px;
-}
-
-.experience-container img {
-    width: 40px;
-}
-
-/* --------------- Footer --------------- */
 footer {
     display: flex;
-    flex-direction: column;
+    background-color: #ef233c;
+    width: 40%;
+    height: 120px;
     align-items: center;
-    background-color: #343A3E;
-    color: #ffffff;
-    padding: 30px;
-  }
-
-  footer p {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-
-  footer .links {
-    text-align: center;
-  }
-
-  footer a {
-    color: #ffffffb1;
-    font-size: 14px;
-    border-radius: 10px;
-    padding: 6px 10px;
-    text-decoration: none;
-    transition: 0.5s ease;
-    margin: 3px;
-  }
-
-  footer a:visited {
-    color: #ffffffb1;
-  }
-
-  footer a:hover {
-    color: #ffffff5d;
-  }
-
-/* --------------- Mobile Response --------------- */
-@media only screen and (max-width: 900px) {
-    nav li {
-        display: none;
-    }
+    justify-content: center;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-@media only screen and (max-width: 1280px) {
-    html, body {
-        overflow-x: hidden;
-      }
+footer ul {
+    display: flex;
+    gap: 80px;
+}
 
-    body {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+footer a:hover {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 980px) {
+    nav {
+        padding: 60px 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        color: #ef233c;
+        background-color: #ef233c;
+        font-size: 0;
+        border-color: #ef233c;
+        width: 50px;
+    }
+
+    #about {
         justify-content: center;
         align-items: center;
-        margin: 0;
-        padding: 0;
+        padding: 60px 30px;
+    }
+
+    #about img {
+        display: none;
     }
 
     h1 {
-        font-size: 30px;
-    }
-
-    .logo {
-        margin-left: 30px;
-    }
-
-    .darkmode {
-        margin-right: 30px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav a {
-        width: 30px;
-    }
-
-    header {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header-text-container h1 {
-        margin: 0;
-    }
-
-    .header-text-container p {
-        margin: 0;
-    }
-
-    .header-text-container {
-        padding: 0;
-        margin: 0;
-    }
-
-    .memoji {
-        width: 400px;
-        margin: 0;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #my-work {
-        grid-template-columns: 1fr;
-        padding: 0;
-        gap: 0;
-    }
-
-    #my-work.light-mode {
-        grid-template-columns: 1fr;
-        padding: 0;
-        gap: 0;
-    }
-
-    #my-work .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
-        border-radius: 0;
-        margin-top: 0;
-        width: 100%;
-    }
-
-    #about-me {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about-text-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        margin: 60px 40px;
-        padding: 0;
     }
 
-    .about-text-container p {
-        font-size: 20px;
-    }
-
-    div.experience-container {
+    #about p {
+        text-align: center;
         width: 100%;
-        padding: 0 40px;
+    }
+
+    #projects {
+        text-align: center;
+        padding: 80px 30px;
+        flex-direction: column;
+    }
+
+    .project1 {
+        margin: 0;
+    }
+
+    .project3 {
+        margin: 0;
     }
 
     footer {
