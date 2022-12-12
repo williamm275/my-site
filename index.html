@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -22,6 +23,7 @@
       href="./favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -31,128 +33,73 @@
     />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Will R. Martinez</title>
+    <title>William Martinez</title>
   </head>
 
   <body>
-    <nav>
-      <a href="./index.html"
-        ><img class="logo" src="./images/logo-white.svg"
-      /></a>
-      <ul class="nav-links">
-        <li><a href="#my-work">My Work</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="darkmode"
-        ><img
-          src="./images/moon.png"
-          id="imgClickAndChange"
-          onclick="changeImage()"
-      /></a>
-    </nav>
-
-    <header class="light-mode">
-      <div class="header-text-container">
-        <h1>William R. Martinez</h1>
-        <p>Full Stack Engineer</p>
-      </div>
-      <img class="memoji" src="./images/memoji.svg" />
+    <header>
+      <nav>
+        <a href="./index.html">
+          <h2>William Martinez</h2>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="#about">about<span class="dot">.</span></a>
+            </li>
+            <li>
+              <a href="#contact">contact<span class="dot">.</span></a>
+            </li>
+          </ul>
+          <a href="#projects"><button>projects</button></a>
+        </div>
+      </nav>
     </header>
-
     <main>
-      <section id="my-work" class="light-mode">
-        <div class="project-1">
-          <h2>Project 1</h2>
-          <a href="https://williamm275.github.io/decoder-ring/" target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-
-        <div class="project-2">
-          <h2>Project 2</h2>
-          <a
-            href="https://williamm275.github.io/easybank-landing-page/"
-            target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-        <div class="project-3">
-          <h2>Project 3</h2>
-          <a href="https://williamm275.github.io/local-library/" target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-        <div class="project-4">
-          <h2>Project 4</h2>
-          <a href="https://williamm275.github.io/praxil/" target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-        <div class="project-5">
-          <h2>Project 5</h2>
-          <a href="https://williamm275.github.io/robofriends/" target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-        <div class="project-6">
-          <h2>Project 6</h2>
-          <a href="williamm275.github.io/tindog/" target="_blank"
-            ><i class="fa-sharp fa-solid fa-square-up-right"></i
-          ></a>
-        </div>
-      </section>
-
-      <section id="about-me">
-        <div class="about-text-container">
-          <h3>Hi, I'm Will</h3>
+      <section id="about">
+        <div class="about-container">
+          <h1>a Software Developer</h1>
           <p>
-            I am a Software Engineer who is passionate about creating amazing
-            user experiences that helps us to live better lives. I have grown my
-            skills in problem solving, front end development, APIs, databases,
-            and testing. What I love the most about software engineering is the
-            ability to create something that will potentially be used by many
-            people that find value in what I created. This application hopefully
-            will make tasks more useful, entertain users, inspire them, or
-            affect them positively in any way.
+            i am passionate about creating beautiful user experiences that help
+            us to live better lives. I have grown my skills in problem-solving,
+            JavaScript, CSS, responsive design, web design and semantic HTML.
           </p>
         </div>
+        <img src="./images/quotes.svg" alt="quotes" />
       </section>
 
-      <section id="experience" class="light-mode">
-        <div class="experience-container">
-          <h2>What I've worked with:</h2>
-          <ul>
-            <li><img src="./images/logos/html5.png" />HTML5</li>
-            <li><img src="./images/logos/css3.png" />CSS3</li>
-            <li><img src="./images/logos/javascript.png" />JavaScript</li>
-            <li><img src="./images/logos/node-js.png" />Node.js</li>
-            <li><img src="./images/logos/react.png" />React.js</li>
-            <li><img src="./images/logos/mongodb.png" />MongoDB</li>
-            <li><img src="./images/logos/figma.png" />Figma</li>
-            <li><img src="./images/logos/RESTAPI.png" />REST API</li>
-            <li><img src="./images/logos/bootstrap.png" />Bootstrap</li>
-            <li><img src="./images/logos/visual-studio-code.png" />VS Code</li>
-            <li><img src="./images/logos/git.png" />Git</li>
-            <li><img src="./images/logos/github.png" />GitHub</li>
-            <li><img src="./images/logos/npm.png" />NPM</li>
-            <li><img src="./images/logos/webpack.png" />Webpack</li>
-          </ul>
+      <section id="projects">
+        <div class="project1">
+          <a
+            ><h2>Yelpcamp<span class="dot">.</span></h2></a
+          >
+        </div>
+        <div class="project2">
+          <a
+            ><h2>smartBrain<span class="dot">.</span></h2></a
+          >
+        </div>
+        <div class="project3">
+          <a
+            ><h2>...<span class="dot">.</span></h2></a
+          >
         </div>
       </section>
-
-      <section id="contact"></section>
     </main>
-
-    <footer>
-      <div id="contact" class="links light-mode">
-        <p>You can reach me on:</p>
-        <a href="https://github.com/williamm275" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/williamm275" target="_blank"
-          >LinkedIn</a
-        >
-      </div>
+    <footer id="contact">
+      <ul>
+        <li>
+          <a href="https://twitter.com/williamm275" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/williamm275" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/williamm275" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
     </footer>
     <script src="./script.js"></script>
   </body>
