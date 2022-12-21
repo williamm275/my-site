@@ -96,11 +96,11 @@ header {
 .banner-img-container {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 
 header img {
-  width: 800px;
-  height: 800px;
+  height: 700px;
 }
 
 main {
