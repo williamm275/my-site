@@ -124,6 +124,45 @@ main {
   justify-content: center;
 }
 
+span {
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+span.fade {
+  color: #15171f;
+}
+
+.skills li {
+  margin-top: 50px;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.fa-js:hover {
+  color: #efde23;
+}
+
+.fa-html5:hover {
+  color: #ef7823;
+}
+
+.fa-css3-alt:hover {
+  color: #2360ef;
+}
+
+.fa-react:hover {
+  color: #23b9ef;
+}
+
+.fa-node:hover {
+  color: #1da877;
+}
+
+.fa-database:hover {
+  color: #ffffff;
+}
+
 h1 {
   font-family: "PP Mori";
   font-size: 70px;
